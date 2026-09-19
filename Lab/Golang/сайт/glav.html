@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Хулкар Фармонова — начинающий frontend-разработчик. Верстка адаптивных сайтов на HTML, CSS, JavaScript. Изучаю Go.">
+    <title>Фармонова Хулкар — Frontend-разработчик</title>
+    <link rel="stylesheet" href="g.css">
+</head>
+<body>
+
+    <a href="#main" class="skip-link">Перейти к содержимому</a>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo" aria-label="На главную">RAZBFARM<span aria-hidden="true">.</span></a>
+            <nav class="nav" aria-label="Основная навигация">
+                <a href="#about" class="nav__link">Обо мне</a>
+                <a href="#skills" class="nav__link">Навыки</a>
+                <a href="#projects" class="nav__link">Проекты</a>
+                <a href="#contact" class="nav__link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__inner">
+                <div class="hero__text">
+                    <p class="hero__greeting">Привет, меня зовут</p>
+                    <h1 class="hero__title" id="hero-title">Хулкар Фармонова</h1>
+                    <p class="hero__subtitle">Frontend-разработчик, верстаю сайты и учу Go</p>
+                    <div class="hero__buttons">
+                        <a href="#contact" class="btn btn--primary">Связаться</a>
+                        <a href="#projects" class="btn btn--ghost">Мои работы</a>
+                    </div>
+                </div>
+                <div class="hero__avatar">
+                    <img
+                        src="aTA5LZ4QYM1l8QB3QQsZhwcJZWnt4ZpBogip8efZzyhYDZL7QBSrWzOH3VNAIJurqplZtMuMKs4Uadai-rxDv5Pv.jpg"
+                        alt="Хулкар Фармонова, frontend-разработчик"
+                        width="320" height="320"
+                        loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- ОБО МНЕ -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 class="section__title" id="about-title">Обо мне</h2>
+                <p class="section__text">
+                    Я начинающий frontend-разработчик. Верстаю адаптивные сайты,
+                    изучаю JavaScript и Go. Люблю чистый код, аккуратные макеты
+                    и понятные интерфейсы. Ниже — то, что я уже умею и над чем работаю.
+                </p>
+            </div>
+        </section>
+
+        <!-- НАВЫКИ (dl вместо ul — по твоему примеру №7) -->
+        <section class="section section--gray" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 class="section__title" id="skills-title">Навыки</h2>
+                <dl class="skills">
+                    <div class="skills__row">
+                        <dt class="skills__name">HTML</dt>
+                        <dd class="skills__value">Уверенно</dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt class="skills__name">CSS</dt>
+                        <dd class="skills__value">Уверенно</dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt class="skills__name">Flexbox</dt>
+                        <dd class="skills__value">Уверенно</dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt class="skills__name">CSS Grid</dt>
+                        <dd class="skills__value">Уверенно</dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt class="skills__name">Адаптивная вёрстка</dt>
+                        <dd class="skills__value">Уверенно</dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt class="skills__name">Git</dt>
+                        <dd class="skills__value">Базово</dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt class="skills__name">JavaScript</dt>
+                        <dd class="skills__value">Учусь</dd>
+                    </div>
+                    <div class="skills__row">
+                        <dt class="skills__name">Go</dt>
+                        <dd class="skills__value">Учусь</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ПРОЕКТЫ -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 class="section__title" id="projects-title">Проекты</h2>
+                <div class="projects">
+                    <article class="card">
+                        <h3 class="card__title">Сайт-визитка</h3>
+                        <p class="card__text">Тот сайт, который вы сейчас смотрите. Свёрстан с нуля на HTML и CSS.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">Лендинг кафе</h3>
+                        <p class="card__text">Одностраничный сайт с меню, галереей и формой брони.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section class="section section--gray" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 class="section__title" id="contact-title">Контакты</h2>
+                <p class="section__text">Пишите — отвечу быстро.</p>
+                <ul class="contacts">
+                    <li>
+                        <a href="mailto:farmonovah@gmail.com" class="contacts__link">
+                            farmonovah@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/stiiiliiis" class="contacts__link"
+                           target="_blank" rel="noopener noreferrer">
+                            Telegram: @stiiiliiis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Hulkar_IS_223" class="contacts__link"
+                           target="_blank" rel="noopener noreferrer">
+                            GitHub: /Hulkar_IS_223
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 RAZBFARM.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
